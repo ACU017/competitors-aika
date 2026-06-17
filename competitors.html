@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Competitors List</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --surface: #fffdfa;
+      --surface-2: #f9f8f5;
+      --border: #ddd7ca;
+      --text: #28251d;
+      --muted: #6f6a61;
+      --primary: #01696f;
+      --shadow: 0 16px 40px rgba(26, 23, 18, 0.08);
+      --radius: 18px;
+      --radius-sm: 999px;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), var(--surface-2));
+      color: var(--text);
+      font-family: Inter, 'Segoe UI', sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-6);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--space-4);
+      align-items: center;
+      margin-bottom: var(--space-6);
+      flex-wrap: wrap;
+    }
+    .topbar h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1;
+    }
+    .topbar p {
+      margin: var(--space-2) 0 0;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+    .nav-actions {
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+    button, .pill {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    button.primary, .pill.primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-4);
+    }
+    .card {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--space-5);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+    }
+    .card h2 {
+      margin: 0 0 var(--space-2);
+      font-size: 1.15rem;
+    }
+    .tag-row {
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-3);
+    }
+    .tag {
+      background: var(--surface-2);
+      color: var(--muted);
+      font-size: 0.82rem;
+      border-radius: 999px;
+      padding: 0.35rem 0.6rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .card .website {
+      margin-top: var(--space-4);
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .empty {
+      padding: var(--space-8);
+      text-align: center;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+    }
+    @media (max-width: 800px) {
+      .page { padding: var(--space-6) var(--space-4); }
+      .topbar { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="topbar">
+      <div>
+        <h1>Competitor directory</h1>
+        <p>Browse each competitor and open the full profile for capabilities, pricing, and strategic notes.</p>
+      </div>
+      <div class="nav-actions">
+        <a class="pill" href="index.html">Back to matrix</a>
+      </div>
+    </section>
+    <section id="cards" class="grid"></section>
+  </main>
+
+  <script>
+    const CSV_PATH = './Context/20260406_Biorce Competitors - Competitor Matrix.csv';
+
+    function parseCSV(text) {
+      const rows = [];
+      let row = [];
+      let field = '';
+      let inQuotes = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const next = text[i + 1];
+
+        if (inQuotes) {
+          if (char === '"') {
+            if (next === '"') {
+              field += '"';
+              i++;
+            } else {
+              inQuotes = false;
+            }
+          } else {
+            field += char;
+          }
+        } else {
+          if (char === '"') {
+            inQuotes = true;
+          } else if (char === ',') {
+            row.push(field.trim());
+            field = '';
+          } else if (char === '\n' || char === '\r') {
+            if (char === '\r' && next === '\n') i++;
+            if (field.length > 0 || row.length > 0) {
+              row.push(field.trim());
+              rows.push(row);
+              row = [];
+              field = '';
+            }
+          } else {
+            field += char;
+          }
+        }
+      }
+
+      if (field.length > 0 || row.length > 0) {
+        row.push(field.trim());
+        rows.push(row);
+      }
+
+      const headers = rows[0] || [];
+      return rows.slice(1).filter(row => row.some(cell => cell.trim() !== '')).map(row => {
+        const obj = {};
+        headers.forEach((header, idx) => {
+          obj[header] = row[idx] || '';
+        });
+        return obj;
+      });
+    }
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function shorten(text, max = 140) {
+      const cleaned = String(text || '').replace(/\s+/g, ' ').trim();
+      return cleaned.length > max ? cleaned.slice(0, max - 1) + '…' : cleaned;
+    }
+
+    async function loadCompetitors() {
+      const response = await fetch(CSV_PATH);
+      const text = await response.text();
+      const records = parseCSV(text);
+      const container = document.getElementById('cards');
+
+      container.innerHTML = '';
+
+      if (!records.length) {
+        container.innerHTML = '<div class="empty">No competitors found.</div>';
+        return;
+      }
+
+      records.forEach(record => {
+        const name = record['Company Name'] || 'Unknown';
+        const type = record['Type'] || 'Unknown';
+        const website = record['Website'] || '';
+        const oneLiner = record['One-Liner Description'] || '';
+        const threat = record['Threat Level'] || '';
+        const vertical = record['Vertical'] || '';
+
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = `competitor-detail.html?company=${encodeURIComponent(name)}`;
+        card.innerHTML = `
+          <div class="tag-row">
+            <span class="tag">${escapeHtml(type)}</span>
+            ${threat ? `<span class="tag">Threat: ${escapeHtml(threat)}</span>` : ''}
+          </div>
+          <h2>${escapeHtml(name)}</h2>
+          <p>${escapeHtml(shorten(oneLiner))}</p>
+          <div class="website">${escapeHtml(website || 'No website listed')}</div>
+          ${vertical ? `<div class="tag-row" style="margin-top:0.75rem;"><span class="tag">${escapeHtml(vertical)}</span></div>` : ''}
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    loadCompetitors().catch(err => {
+      document.getElementById('cards').innerHTML = '<div class="empty">Unable to load competitors right now.</div>';
+      console.error(err);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Competitor Details</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --surface: #fffdfa;
+      --surface-2: #f9f8f5;
+      --border: #ddd7ca;
+      --text: #28251d;
+      --muted: #6f6a61;
+      --primary: #01696f;
+      --shadow: 0 18px 48px rgba(26, 23, 18, 0.1);
+      --radius: 18px;
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), var(--surface-2));
+      color: var(--text);
+      font-family: Inter, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+    a { color: inherit; }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-6);
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: var(--space-5);
+      text-decoration: none;
+    }
+    .detail-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .hero {
+      padding: var(--space-6);
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(90deg, var(--surface), var(--surface-2));
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.1;
+    }
+    .meta {
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+      margin-top: var(--space-3);
+    }
+    .pill {
+      background: var(--surface-2);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 0.45rem 0.7rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .content {
+      display: grid;
+      gap: var(--space-5);
+      grid-template-columns: 1.2fr 0.8fr;
+      padding: var(--space-6);
+    }
+    .section {
+      background: var(--surface-2);
+      border-radius: var(--radius);
+      padding: var(--space-5);
+    }
+    .section h2 {
+      margin: 0 0 var(--space-3);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+    .section p,
+    .section li {
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .section ul {
+      padding-left: 1.1rem;
+      margin: 0;
+    }
+    .info-grid {
+      display: grid;
+      gap: var(--space-3);
+    }
+    .info-item {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: var(--space-3);
+    }
+    .info-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .info-item strong { display: block; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--space-1); }
+    .website-link {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    @media (max-width: 900px) {
+      .content { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 800px) {
+      .page { padding: var(--space-6) var(--space-4); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back-btn" href="competitors.html">← Back to competitors</a>
+    <section class="detail-card">
+      <div class="hero">
+        <h1 id="companyName">Competitor</h1>
+        <div class="meta">
+          <span class="pill" id="companyType">Type</span>
+          <span class="pill" id="companyThreat">Threat</span>
+          <span class="pill" id="companyVertical">Vertical</span>
+        </div>
+      </div>
+      <div class="content">
+        <section class="section">
+          <h2>Overview</h2>
+          <p id="oneLiner"></p>
+        </section>
+        <aside class="section info-grid">
+          <div class="info-item">
+            <strong>Website</strong>
+            <a class="website-link" id="website" href="#" target="_blank" rel="noreferrer"></a>
+          </div>
+          <div class="info-item">
+            <strong>Target Segment</strong>
+            <p id="targetSegment"></p>
+          </div>
+          <div class="info-item">
+            <strong>Pricing</strong>
+            <p id="pricing"></p>
+          </div>
+          <div class="info-item">
+            <strong>Funding Stage</strong>
+            <p id="funding"></p>
+          </div>
+        </aside>
+        <section class="section">
+          <h2>Key Capabilities</h2>
+          <p id="capabilities"></p>
+        </section>
+        <section class="section">
+          <h2>Weaknesses</h2>
+          <p id="weaknesses"></p>
+        </section>
+        <section class="section">
+          <h2>Sources</h2>
+          <p id="sources"></p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const CSV_PATH = './Context/20260406_Biorce Competitors - Competitor Matrix.csv';
+
+    function parseCSV(text) {
+      const rows = [];
+      let row = [];
+      let field = '';
+      let inQuotes = false;
+
+      for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        const next = text[i + 1];
+
+        if (inQuotes) {
+          if (char === '"') {
+            if (next === '"') {
+              field += '"';
+              i++;
+            } else {
+              inQuotes = false;
+            }
+          } else {
+            field += char;
+          }
+        } else {
+          if (char === '"') {
+            inQuotes = true;
+          } else if (char === ',') {
+            row.push(field.trim());
+            field = '';
+          } else if (char === '\n' || char === '\r') {
+            if (char === '\r' && next === '\n') i++;
+            if (field.length > 0 || row.length > 0) {
+              row.push(field.trim());
+              rows.push(row);
+              row = [];
+              field = '';
+            }
+          } else {
+            field += char;
+          }
+        }
+      }
+
+      if (field.length > 0 || row.length > 0) {
+        row.push(field.trim());
+        rows.push(row);
+      }
+
+      const headers = rows[0] || [];
+      return rows.slice(1).filter(row => row.some(cell => cell.trim() !== '')).map(row => {
+        const obj = {};
+        headers.forEach((header, idx) => {
+          obj[header] = row[idx] || '';
+        });
+        return obj;
+      });
+    }
+
+    function formatValue(value) {
+      return value && value.trim() ? value : 'Not specified';
+    }
+
+    async function loadDetail() {
+      const params = new URLSearchParams(window.location.search);
+      const requestedName = params.get('company');
+      if (!requestedName) {
+        document.body.innerHTML = '<main style="padding:2rem">No company selected.</main>';
+        return;
+      }
+
+      const response = await fetch(CSV_PATH);
+      const text = await response.text();
+      const records = parseCSV(text);
+      const record = records.find(item => item['Company Name'] === requestedName);
+
+      if (!record) {
+        document.getElementById('companyName').textContent = 'Company not found';
+        return;
+      }
+
+      document.title = `${record['Company Name']} | Competitor Details`;
+      document.getElementById('companyName').textContent = record['Company Name'] || 'Unknown';
+      document.getElementById('companyType').textContent = formatValue(record['Type']);
+      document.getElementById('companyThreat').textContent = formatValue(record['Threat Level']);
+      document.getElementById('companyVertical').textContent = formatValue(record['Vertical']);
+      document.getElementById('oneLiner').textContent = formatValue(record['One-Liner Description']);
+      document.getElementById('targetSegment').textContent = formatValue(record['Target Segment']);
+      document.getElementById('pricing').textContent = formatValue(record['Pricing']);
+      document.getElementById('funding').textContent = formatValue(record['Funding Stage']);
+      document.getElementById('capabilities').textContent = formatValue(record['Key Capabilities']);
+      document.getElementById('weaknesses').textContent = formatValue(record['Weaknesses']);
+      document.getElementById('sources').textContent = formatValue(record['Source']);
+
+      const websiteEl = document.getElementById('website');
+      const website = record['Website'] || '';
+      if (website) {
+        websiteEl.href = /^https?:\/\//i.test(website) ? website : `https://${website}`;
+        websiteEl.textContent = website;
+      } else {
+        websiteEl.href = '#';
+        websiteEl.textContent = 'Not listed';
+      }
+    }
+
+    loadDetail().catch(err => {
+      console.error(err);
+      document.getElementById('companyName').textContent = 'Unable to load details';
+    });
+  </script>
+</body>
+</html>

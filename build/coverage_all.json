@@ -1,0 +1,417 @@
+{
+  "Faro Health": {
+    "Protocol Generation": "Strong",
+    "Protocol Amendments": "Partial",
+    "AI-Driven Protocol Optimization": "Strong",
+    "Enhanced ICH M11 Protocol Generation": "Strong",
+    "Iterative Section Revision": "Partial",
+    "Protocol Scoring & Quality Control": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Site Feasibility & Selection": "Partial",
+    "Regulatory Planning": "Partial",
+    "Informed Consent Form (ICF)": "Partial",
+    "Investigator’s Brochure (IB)": "Partial",
+    "CRF Generation": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Monitoring Plan": "Partial",
+    "Initial Cost & Budget Estimation": "Strong"
+  },
+  "ArcaScience": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Competitive Analysis": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Regulatory Planning": "Strong",
+    "Investigational New Drug Application (IND for FDA)": "Partial",
+    "Submission Cover Letters (Regulatory & Ethics)": "Partial",
+    "Clinical Study Report (CSR)": "Strong",
+    "Layperson Summary of Results": "Partial"
+  },
+  "Menken Trials": {
+    "Protocol Scoring & Quality Control": "Partial",
+    "Monitoring Plan": "Strong",
+    "Monitoring Visit Reports": "Strong",
+    "Monitoring Follow-Up Letters": "Partial",
+    "Final Monitoring Visit Report": "Partial",
+    "Delegation of Authority Log": "Partial",
+    "Training Log": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Subject Identification Code List": "Partial",
+    "Notes to File": "Strong",
+    "Archiving & Record Retention": "Strong",
+    "Study Termination Notifications": "Partial"
+  },
+  "Veeva Systems": {
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "CRF Generation": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Monitoring Plan": "Strong",
+    "Monitoring Visit Reports": "Strong",
+    "Monitoring Follow-Up Letters": "Partial",
+    "Final Monitoring Visit Report": "Partial",
+    "Delegation of Authority Log": "Strong",
+    "Training Log": "Strong",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Subject Identification Code List": "Partial",
+    "Notes to File": "Strong",
+    "Archiving & Record Retention": "Strong",
+    "Study Termination Notifications": "Partial",
+    "Regulatory Planning": "Partial",
+    "Submission Cover Letters (Regulatory & Ethics)": "Partial",
+    "IP Accountability Records": "Partial",
+    "Final IP Reconciliation": "Partial"
+  },
+  "Carelane": {
+    "Protocol Generation": "Partial",
+    "AI-Driven Protocol Optimization": "Partial",
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial"
+  },
+  "Mpiriq": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Notes to File": "Partial",
+    "Archiving & Record Retention": "Partial"
+  },
+  "Skyvor Medical AG": {
+    "Protocol Generation": "Partial",
+    "CRF Generation": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Monitoring Plan": "Partial",
+    "Notes to File": "Partial",
+    "Archiving & Record Retention": "Partial"
+  },
+  "stane": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial"
+  },
+  "Cori Clinical": {
+    "Protocol Generation": "Strong",
+    "Informed Consent Form (ICF)": "Strong",
+    "Investigator’s Brochure (IB)": "Strong",
+    "Training Log": "Partial",
+    "Protocol Amendments": "Partial",
+    "AI-Driven Protocol Optimization": "Partial",
+    "Enhanced ICH M11 Protocol Generation": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Protocol Scoring & Quality Control": "Partial",
+    "Regulatory Planning": "Partial",
+    "CRF Generation": "Partial",
+    "Archiving & Record Retention": "Partial"
+  },
+  "Deep Intelligent Pharma": {
+    "Protocol Generation": "Strong",
+    "AI-Driven Protocol Optimization": "Strong",
+    "Protocol Amendments": "Partial",
+    "Enhanced ICH M11 Protocol Generation": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Protocol Scoring & Quality Control": "Partial",
+    "Regulatory Planning": "Strong",
+    "Investigational New Drug Application (IND for FDA)": "Partial",
+    "Submission Cover Letters (Regulatory & Ethics)": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Clinical Study Report (CSR)": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Informed Consent Form (ICF)": "Partial",
+    "Investigator’s Brochure (IB)": "Partial",
+    "CRF Generation": "Partial"
+  },
+  "OASYS Now": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Strong",
+    "Site Feasibility & Selection": "Partial",
+    "Site Feasibility Questionnaires": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  },
+  "Agora Labs": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Archiving & Record Retention": "Partial",
+    "Data Management Plan (DMP)": "Partial"
+  },
+  "CliniNote": {
+    "Subject Screening & Enrollment Log": "Partial",
+    "CRF Generation": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Site Feasibility & Selection": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  },
+  "PatLynk": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Strong",
+    "Site Feasibility & Selection": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Comparative Analysis & Insights": "Partial"
+  },
+  "Sqilline": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Competitive Analysis": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Site Feasibility & Selection": "Partial"
+  },
+  "PhaseV": {},
+  "Risklick": {
+    "Protocol Generation": "Strong",
+    "Protocol Amendments": "Partial",
+    "AI-Driven Protocol Optimization": "Strong",
+    "Enhanced ICH M11 Protocol Generation": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Protocol Scoring & Quality Control": "Strong",
+    "Trial Search & Intelligence": "Strong",
+    "Trial-Specific Information Retrieval": "Strong",
+    "Competitive Analysis": "Partial",
+    "Comparative Analysis & Insights": "Strong",
+    "Site Feasibility & Selection": "Partial",
+    "Site Feasibility Questionnaires": "Partial",
+    "Regulatory Planning": "Strong",
+    "Informed Consent Form (ICF)": "Partial",
+    "Investigational New Drug Application (IND for FDA)": "Partial",
+    "Submission Cover Letters (Regulatory & Ethics)": "Partial",
+    "Ethics Committee / IRB Application Forms": "Partial",
+    "CRF Generation": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Clinical Study Report (CSR)": "Partial"
+  },
+  "DrugCard": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Regulatory Planning": "Partial",
+    "Comparative Analysis & Insights": "Partial"
+  },
+  "PharmaTrail": {
+    "CRF Generation": "Partial",
+    "Data Management Plan (DMP)": "Strong",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Subject Identification Code List": "Partial",
+    "Archiving & Record Retention": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Notes to File": "Partial"
+  },
+  "Allos": {},
+  "EasyMedStat": {
+    "Statistical Analysis Plan (SAP)": "Strong",
+    "Data Management Plan (DMP)": "Strong",
+    "CRF Generation": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Trial Search & Intelligence": "Partial"
+  },
+  "Puray": {},
+  "Testmate Health": {
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial"
+  },
+  "QuantHealth": {
+    "AI-Driven Protocol Optimization": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Trial Search & Intelligence": "Partial"
+  },
+  "Citeline": {
+    "Trial Search & Intelligence": "Strong",
+    "Trial-Specific Information Retrieval": "Strong",
+    "Competitive Analysis": "Strong",
+    "Comparative Analysis & Insights": "Strong",
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "AI-Driven Protocol Optimization": "Partial",
+    "Protocol Generation": "Partial",
+    "Protocol Scoring & Quality Control": "Partial",
+    "Regulatory Planning": "Partial"
+  },
+  "Inato": {
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Comparative Analysis & Insights": "Partial"
+  },
+  "Presentient": {
+    "AI-Driven Protocol Optimization": "Strong",
+    "Comparative Analysis & Insights": "Strong",
+    "Protocol Generation": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Site Feasibility & Selection": "Partial"
+  },
+  "Allyfe": {
+    "Archiving & Record Retention": "Strong",
+    "Notes to File": "Partial",
+    "Monitoring Plan": "Partial",
+    "Informed Consent Form (ICF)": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Delegation of Authority Log": "Partial",
+    "Training Log": "Partial"
+  },
+  "HealthKey": {
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial"
+  },
+  "TriNetX": {
+    "Site Feasibility & Selection": "Strong",
+    "Trial Search & Intelligence": "Strong",
+    "Trial-Specific Information Retrieval": "Strong",
+    "Comparative Analysis & Insights": "Strong",
+    "Competitive Analysis": "Partial",
+    "Site Feasibility Questionnaires": "Partial",
+    "AI-Driven Protocol Optimization": "Partial",
+    "Subject Screening & Enrollment Log": "Partial"
+  },
+  "Qorra": {},
+  "Yseop": {
+    "Clinical Study Report (CSR)": "Strong",
+    "Regulatory Planning": "Strong",
+    "Submission Cover Letters (Regulatory & Ethics)": "Partial",
+    "Investigational New Drug Application (IND for FDA)": "Partial",
+    "Layperson Summary of Results": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Investigator’s Brochure (IB)": "Partial",
+    "Archiving & Record Retention": "Partial"
+  },
+  "JENLY.AI": {
+    "Regulatory Planning": "Strong",
+    "Submission Cover Letters (Regulatory & Ethics)": "Strong",
+    "Clinical Study Report (CSR)": "Partial",
+    "Investigational New Drug Application (IND for FDA)": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Layperson Summary of Results": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Initial Cost & Budget Estimation": "Partial"
+  },
+  "RAYLYTIC": {
+    "CRF Generation": "Strong",
+    "Data Management Plan (DMP)": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial",
+    "Archiving & Record Retention": "Partial"
+  },
+  "Altrovia": {
+    "Protocol Generation": "Partial",
+    "Trial Search & Intelligence": "Partial"
+  },
+  "Iduneo": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Strong",
+    "Subject Identification Code List": "Partial",
+    "Site Feasibility & Selection": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  },
+  "R.grid": {
+    "Archiving & Record Retention": "Strong",
+    "Notes to File": "Partial",
+    "Iterative Section Revision": "Partial",
+    "Clinical Study Report (CSR)": "Partial",
+    "Data Management Plan (DMP)": "Partial",
+    "Monitoring Plan": "Partial",
+    "Protocol Generation": "Partial"
+  },
+  "Yendou": {
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Strong",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Comparative Analysis & Insights": "Partial"
+  },
+  "ConcertAI": {
+    "Trial Search & Intelligence": "Strong",
+    "Trial-Specific Information Retrieval": "Strong",
+    "Competitive Analysis": "Partial",
+    "Comparative Analysis & Insights": "Strong",
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "AI-Driven Protocol Optimization": "Strong",
+    "Protocol Generation": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Regulatory Planning": "Partial",
+    "Initial Cost & Budget Estimation": "Partial"
+  },
+  "Medidata (Dassault Systèmes)": {
+    "Trial Search & Intelligence": "Strong",
+    "Trial-Specific Information Retrieval": "Strong",
+    "Competitive Analysis": "Partial",
+    "Comparative Analysis & Insights": "Strong",
+    "Site Feasibility & Selection": "Partial",
+    "Site Feasibility Questionnaires": "Partial",
+    "AI-Driven Protocol Optimization": "Partial",
+    "Protocol Generation": "Partial",
+    "CRF Generation": "Strong",
+    "Data Management Plan (DMP)": "Strong",
+    "Subject Screening & Enrollment Log": "Strong",
+    "Subject Identification Code List": "Partial",
+    "Monitoring Plan": "Partial",
+    "Monitoring Visit Reports": "Partial",
+    "Archiving & Record Retention": "Partial",
+    "Initial Cost & Budget Estimation": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Statistical Analysis Plan (SAP)": "Partial"
+  },
+  "Trialflow": {
+    "Site Feasibility & Selection": "Strong",
+    "Site Feasibility Questionnaires": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial",
+    "Comparative Analysis & Insights": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Initial Cost & Budget Estimation": "Partial"
+  },
+  "Ancora.ai AG": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Site Feasibility & Selection": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  },
+  "Kitsa": {
+    "Trial Search & Intelligence": "Partial",
+    "Recruitment Materials (advertisements, flyers)": "Partial"
+  },
+  "Sano Genetics": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  },
+  "cogniscreen": {
+    "Recruitment Materials (advertisements, flyers)": "Strong",
+    "Subject Screening & Enrollment Log": "Strong",
+    "Site Feasibility & Selection": "Partial",
+    "Trial Search & Intelligence": "Partial",
+    "Trial-Specific Information Retrieval": "Partial"
+  }
+}
